@@ -6,7 +6,7 @@ class test extends Phaser.Scene{
     }
 
     preload (){
-        this.load.image('bg', '/assets/bg.png');
+        this.load.image('bg', './assets/bg.png');
         // Creamos y colocamos los planetas grandes
         for (let i = 0; i<bigPlanets.length; i++){
             this.load.image(bigPlanets[i].name, bigPlanets[i].filename);
