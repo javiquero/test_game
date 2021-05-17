@@ -16,15 +16,15 @@ class test extends Phaser.Scene{
         }
 
 		for (let i = 0; i<9; i++){
-        	this.load.image("spaceShip"+i, "/assets/spaceship_0" + i + ".png");
+        	this.load.image("spaceShip"+i, "./assets/spaceship_0" + i + ".png");
 		}
 
 		for (let i = 0; i<24; i++){
-        	this.load.image("star"+i, "/assets/star/star_" + i.toString().padStart(2, "0") + ".png");
+        	this.load.image("star"+i, "./assets/star/star_" + i.toString().padStart(2, "0") + ".png");
 		}
 
 		
-		this.load.image('red', 'assets/red.png');
+		this.load.image('red', './assets/red.png');
     }
     create (){
         this.add.image(640,360, 'bg');
